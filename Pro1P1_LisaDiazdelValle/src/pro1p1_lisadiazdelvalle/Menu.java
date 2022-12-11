@@ -862,6 +862,7 @@ public class Menu extends javax.swing.JFrame {
             Labotify.dispose();
             Modificar.setVisible(true);
             Modificar.pack();
+            Modificar.setLocationRelativeTo(this);
             Modificar.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
             indice = indice - 1;
             cambiarnombre.setText(song.get(indice).getCancion());
@@ -897,6 +898,7 @@ public class Menu extends javax.swing.JFrame {
             sartista = cambiarartista.getText();
             san = Integer.parseInt(cambiaran.getText());
             sduracion = Integer.parseInt(cambiarduracion.getText());
+            modificar.setCancion(cambiarnombre.getText());
             modificar.setAlbum(cambiaralbum.getText());
             modificar.setArtista(cambiarartista.getText());
             modificar.setItem(song.size());
